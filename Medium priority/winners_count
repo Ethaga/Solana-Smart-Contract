@@ -1,0 +1,9 @@
+Division & Safe Math
+
+Make sure winners_count > 0:
+require!(winners_count > 0, WagerError::NoWinners);
+Use checked_div, checked_mul, checked_sub:
+let share = total_amount.checked_div(winners_count as u64).ok_or(WagerError::MathError)?;
+let remainder = total_amount.checked_sub(share.checked_mul(winners_count as u64).ok_or(WagerError::MathError)?).ok_or(WagerError::MathError)?;
+
+Determine routing remainder (house fee or back-to-vault).

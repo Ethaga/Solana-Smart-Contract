@@ -1,0 +1,3 @@
+Bind game_server authority & consider multisig
+
+Store game_server pubkey in GameSession at creation. Check that ctx.accounts.game_server.key() equals stored value and that game_server signed transaction.

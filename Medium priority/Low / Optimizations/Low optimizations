@@ -1,0 +1,5 @@
+Use u64 for token amounts. Avoid u16 unless bounded and validated.
+
+Avoid copying Vec<Pubkey>; iterate by reading stored slots or use compact representation.
+
+Replace msg! with Anchor emit! events.

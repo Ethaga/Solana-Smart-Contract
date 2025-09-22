@@ -1,0 +1,1 @@
+Do not mark session finalized outside atomic transaction. If you must perform multiple CPIs, check each Result and if any fails, bubble up error so whole tx rollbacks.

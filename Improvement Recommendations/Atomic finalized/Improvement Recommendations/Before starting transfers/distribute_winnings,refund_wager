@@ -1,0 +1,4 @@
+// check-and-set atomically
+require!(game_session.state == 0, WagerError::SessionFinalized);
+game_session.state = 1u8; // mark finalized BEFORE transfers
+// then perform transfers with PDA authority (invoke_signed)

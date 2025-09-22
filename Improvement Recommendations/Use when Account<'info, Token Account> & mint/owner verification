@@ -1,0 +1,7 @@
+In the Context for transfer instructions, request:
+#[account(mut, token::mint = token_mint, token::authority = vault_pda)]
+pub vault_token_account: Account<'info, TokenAccount>,
+
+or manual check:
+require!(vault_token_account.mint == expected_mint, WagerError::InvalidMint);
+require!(vault_token_account.owner == vault_pda.key(), WagerError::InvalidVaultOwner);
