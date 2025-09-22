@@ -30,7 +30,7 @@ Since the program handles **real funds during live matches**, security and corre
 
 ---
 
-## 🔧 Recommendations
+## 🔧 Severity
 
 ### High Priority
 - Add **atomic finalization flag** (enum `{ Open, Finalized }`) to prevent double payouts/refunds.
@@ -49,7 +49,7 @@ Since the program handles **real funds during live matches**, security and corre
 
 ---
 
-## 🧪 Suggested Test Cases
+## 🧪 Test Cases
 1. **Session creation** (happy path).  
 2. **Join user** — enforce max capacity, reject overflow joins.  
 3. **Distribute winnings** — enforce authority-only execution.  
