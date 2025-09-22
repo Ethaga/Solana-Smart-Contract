@@ -65,11 +65,5 @@ Since the program handles **real funds during live matches**, security and corre
 - Comprehensive review: **3–5 days**  
 - Test development & exploit simulation: **1–2 days**  
 - Patch & re-audit: **2–4 days**  
-
-**Total:** 7–13 business days (single auditor)  
-**Team of 2 auditors:** 4–7 business days
-
----
-
-## 📂 Repository Structure (suggested)
-
+**Total:** 7–13 business days (sigle auditor)  
+**Team of 2 auditors:** 4–7 busiess days
